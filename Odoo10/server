@@ -1,0 +1,53 @@
+https://github.com/jneubaum/odoo-open-source-installation-script
+
+scp C:\Users\RKDK_Non\Downloads\odoo-install.sh root@159.65.6.11:~/  ---นำเข้า
+scp C:\Users\RKDK_Non\Downloads\vsftpd.conf root@159.65.6.11:~/ 
+scp E:\workspace root@159.65.6.11:~/
+unrar x workspace.rar 
+
+
+ssh root@159.65.6.11
+RKDK1261NON
+159.65.6.11
+YES
+chmod +x odoo-install.sh ---แครกกกก
+
+./odoo-install.sh -----รันนนนนน
+
+------------------------------------+
+C:\Python\Project_leaves\Scripts>activate
+
+virtualenv Project_leaves
+activate
+
+​pip install Flask
+​pip install requests
+pip install uncleengineer
+
+ngrok http 200
+
+sudo chmod 755 non/
+service vsftpd restart
+
+rm -r mydir
+sudo apt-get remove ftp
+ftp
+
+action_approve
+action_refuse
+action_draft
+sudo opt/odoo/odoo/odoo-bin -c etc/odoo.conf
+
+service vsftpd start
+ service vsftpd restart
+
+/home/non/workspace/odoo12/odoo/odoo-bin
+/home/non/workspace/config/odoo12.conf
+sudo odoo12/odoo/odoo-bin -c config/odoo12.conf
+
+mv "workspace.txt"new"workspace"
+pip install -r requirements.txt
+
+
+sudo odoo12/odoo/odoo-bin -c config/odoo12.conf
+

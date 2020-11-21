@@ -1,0 +1,76 @@
+ก่อนติดตั้ง sudo apt-git install git
+sudo apt install git
+
+
+sudo git clone -b (version เช่น 9.0) {ตามด้วยลิ้งค์} odoo(เท่าไหร่ เช่น odoo9.0) การติดตั้ง odoo 
+sudo git clone -b 12.0 https://github.com/odoo/odoo.git
+
+การติดตั้ง docker
+sudo apt-get update
+sudo apt install docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+docker --version
+
+
+sudo apt-get remove docker* 
+sudo apt-get autoremove
+sudo apt-get autoclean
+sudo rm -rf /var/www/discourse -R
+docker container rm xxxxxxx
+
+  
+sudo docker start odoo
+sudo docker ps 
+sudo docker ps -a 
+sudo chmod -R 777 [ตามด้วยชื่อไฟล์ที่จะปลด]
+
+การติดตั้ง posgrast เพื่อการเชื่อมต่อกับ docker
+sudo docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo -e POSTGRES_DB=postgres -p 5432:5432 --name db(nameeeee) postgres:9.6
+
+sudo docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo -e POSTGRES_DB=postgres -p 5432:5432 --name odoo postgres:9.6
+
+
+ทำการเข้าเว็ป https://www.getopenerp.com/install-odoo-10-on-ubuntu-16-04/?fbclid=IwAR3qE2Awu8N_a7-_tJokX7uD1gk8ZbUvMaGuodukgArKyf2eZleZmnaHYkk
+
+แล้วติดตั้ง 
+1.sudo apt-get update
+2.sudo apt-get upgrade
+
+sudo apt-get install python-dateutil python-docutils python-feedparser python-jinja2 python-ldap python-libxslt1 python-lxml python-mako python-mock python-openid python-psycopg2 python-psutil python-pychart python-pydot python-pyparsing python-reportlab python-simplejson python-tz python-unittest2 python-vatnumber python-vobject python-webdav python-werkzeug python-xlwt python-yaml python-zsi poppler-utils python-pip python-passlib python-decorator gcc python-dev mc bzr python-setuptools python-markupsafe python-reportlab-accel python-zsi python-yaml python-argparse python-openssl python-egenix-mxdatetime python-usb python-serial lptools make python-pydot python-psutil python-paramiko poppler-utils antiword python-requests python-xlsxwriter python-suds python-psycogreen python-ofxparse python-gevent
+ควรหาไฟล์ที่ชื่อ
+sudo apt install python-pypdf
+sudo apt install python-pylabel
+sudo apt install python-pytools
+
+แล้วลบออกแล้วค่อยติดตั้งทีหลัง
+
+3.sudo apt-get install -y npm
+4.sudo ln -s /usr/bin/nodejs /usr/bin/node
+5.sudo npm install -g less less-plugin-clean-css
+
+
+sudo touch odoo12.conf
+sudo chmod -R 777 odoo12.conf
+
+
+
+
+
+
+
+workspace.zip
+unzip workspace.zip
+
+
+
+
+mv -i  "workspace.txt" " workspace"
+
+
+pip install pyPdf
+
+pip install babel
+
+
+sudo apt update && sudo apt -y upgrade
